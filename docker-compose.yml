@@ -5,11 +5,7 @@ services:
     build: ./
     volumes: 
       - ./:/home/ubuntu/
-    environment:
-      - FILENAME=hello_word
     working_dir: /home/ubuntu
     command: 
       - ./run.sh
-      # - ls -la /
-      # - nasm -f elf62 -o ./comfile/${FILENAME}.o ./${FILENAME}.asm #\       ./comfile/${FILENAME}
       
